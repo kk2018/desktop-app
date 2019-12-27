@@ -142,6 +142,7 @@ export default {
   exit(state) {
     state.me = {}
     state.currentConversationId = null
+    state.editing = false
     state.conversations = {}
     state.conversationKeys = []
     state.friends = []
@@ -191,6 +192,7 @@ export default {
       refreshConversation(state, conversationId)
     }
     state.currentConversationId = conversationId
+    state.editing = false
     state.currentUser = userDao.findUserByConversationId(conversationId)
   },
   refreshMessage(state, conversationId) {
@@ -223,6 +225,7 @@ export default {
     }
     if (state.currentConversationId === conversationId) {
       state.currentConversationId = null
+      state.editing = false
     }
   },
   refreshFriends(state) {
@@ -264,5 +267,8 @@ export default {
     state.attachment = arr.filter(item => {
       return item !== messageId
     })
+  },
+  toggleEditor(state) {
+    state.editing = !state.editing
   }
 }

@@ -30,7 +30,8 @@ let transactions = {
         exit_group: 'Exit Group',
         clear: 'Clear Chat',
         mute: 'Mute',
-        cancel_mute: 'Cancel Mute'
+        cancel_mute: 'Cancel Mute',
+        create_post: 'Create post'
       },
       personal: ['New Group', 'Profile', 'Setting', 'Logout'],
       chat_operation: {
@@ -163,7 +164,8 @@ let transactions = {
         exit_group: '退出群组',
         clear: '清空聊天记录',
         mute: '静音',
-        cancel_mute: '取消静音'
+        cancel_mute: '取消静音',
+        create_post: '创建文章'
       },
       personal: ['新建群组', '个人信息', '设置', '登出'],
       chat_operation: {

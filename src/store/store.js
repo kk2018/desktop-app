@@ -26,6 +26,7 @@ const state = {
   },
 
   showTime: false,
+  editing: false,
   linkStatus: LinkStatus.CONNECTED
 }
 
