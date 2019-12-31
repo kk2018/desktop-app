@@ -968,7 +968,6 @@ export default {
     left: 18rem;
     right: 0;
     height: 100%;
-    border-left: 1px solid $border-color;
     z-index: 10;
   }
   .overlay-reply {
@@ -977,7 +976,6 @@ export default {
     top: 0;
     right: 0;
     height: 100%;
-    border-left: 1px solid $border-color;
     z-index: 10;
   }
 
@@ -985,7 +983,6 @@ export default {
     position: absolute;
     height: 100%;
     left: 18rem;
-    border-left: 1px solid $border-color;
     right: 0;
     bottom: 0;
     pointer-events: none;
